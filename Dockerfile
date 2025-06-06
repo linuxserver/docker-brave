@@ -1,3 +1,4 @@
+# syntax=docker/dockerfile:1
 FROM ghcr.io/linuxserver/baseimage-selkies:debianbookworm
 
 # set version label
@@ -25,6 +26,9 @@ RUN \
   apt-get install -y --no-install-recommends \
     brave-browser && \
   echo "**** cleanup ****" && \
+  printf \
+    "Linuxserver.io version: ${VERSION}\nBuild-date: ${BUILD_DATE}" \
+    > /build_version && \
   apt-get autoclean && \
   rm -rf \
     /config/.cache \
