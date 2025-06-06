@@ -1,0 +1,28 @@
+---
+
+# jenkins variables
+project_name: docker-brave
+external_type: na
+custom_version_command: "curl -s -L https://brave-browser-apt-release.s3.brave.com/dists/stable/main/binary-amd64/Packages.gz | gunzip |grep -A 7 -m 1 'Package: brave' | awk -F ': ' '/Version/{print $2;exit}'"
+release_type: stable
+release_tag: latest
+ls_branch: master
+build_armhf: false
+repo_vars:
+  - BUILD_VERSION_ARG = 'BRAVE_VERSION'
+  - LS_USER = 'linuxserver'
+  - LS_REPO = 'docker-brave'
+  - CONTAINER_NAME = 'brave'
+  - DOCKERHUB_IMAGE = 'linuxserver/brave'
+  - DEV_DOCKERHUB_IMAGE = 'lsiodev/brave'
+  - PR_DOCKERHUB_IMAGE = 'lspipepr/brave'
+  - DIST_IMAGE = 'ubuntu'
+  - MULTIARCH = 'true'
+  - CI = 'true'
+  - CI_WEB = 'true'
+  - CI_PORT = '3001'
+  - CI_SSL = 'true'
+  - CI_DELAY = '120'
+  - CI_DOCKERENV = 'TZ=US/Pacific'
+  - CI_AUTH = 'user:password'
+  - CI_WEBPATH = ''
