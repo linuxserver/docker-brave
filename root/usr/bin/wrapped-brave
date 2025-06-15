@@ -3,7 +3,7 @@
 BIN=/usr/bin/brave-browser
 
 # Cleanup
-if ! pgrep brave > /dev/null;then
+if pgrep brave > /dev/null;then
   rm -f $HOME/.config/BraveSoftware/Brave-Browser/Singleton*
 fi
 
