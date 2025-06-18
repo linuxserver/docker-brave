@@ -12,7 +12,7 @@ binutils                                                                      2.
 binutils-common                                                               2.40-2                                  deb                         
 binutils-x86-64-linux-gnu                                                     2.40-2                                  deb                         
 blinker                                                                       1.5                                     python                      
-brave-browser                                                                 1.79.123                                deb                         
+brave-browser                                                                 1.79.126                                deb                         
 brave-keyring                                                                 1.18                                    deb                         
 bsd-mailx                                                                     8.1.2-0.20220412cvs-1                   deb                         
 bsdextrautils                                                                 2.38.1-5+deb12u3                        deb                         
