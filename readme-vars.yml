@@ -7,6 +7,7 @@ project_logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/ma
 project_blurb: "[The Brave browser]({{ project_url }}) is a fast, private and secure web browser for PC, Mac and mobile."
 project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
 project_blurb_optional_extras_enabled: false
+project_categories: "Web Browser"
 # supported architectures
 available_architectures:
   - {arch: "{{ arch_x86_64 }}", tag: "latest"}
