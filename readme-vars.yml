@@ -17,9 +17,6 @@ development_versions: false
 # container parameters
 common_param_env_vars_enabled: true
 param_container_name: "{{ project_name }}"
-param_usage_include_env: true
-param_env_vars:
-  - {env_var: "TZ", env_value: "Europe/London", desc: "Specify a timezone to use EG Europe/London."}
 param_usage_include_vols: true
 param_volumes:
   - {vol_path: "/config", vol_host_path: "/path/to/config", desc: "Users home directory in the container, stores local files and settings"}
@@ -29,9 +26,6 @@ param_ports:
   - {external_port: "3001", internal_port: "3001", port_desc: "Brave desktop gui HTTPS."}
 custom_params:
   - {name: "shm-size", name_compose: "shm_size", value: "1gb", desc: "This is needed for Brave to function."}
-opt_security_opt_param: true
-opt_security_opt_param_vars:
-  - {run_var: "seccomp=unconfined", compose_var: "seccomp:unconfined", desc: "For Docker Engine only, many modern gui apps need this to function on older hosts as syscalls are unknown to Docker."}
 # Selkies blurb settings
 selkies_blurb: true
 show_nvidia: true
@@ -111,4 +105,5 @@ init_diagram: |
   "brave:latest" <- Base Images
 # changelog
 changelogs:
+  - {date: "22.09.25:", desc: "Rebase to Debian Trixie."}
   - {date: "06.06.25:", desc: "Initial Version."}
