@@ -21,7 +21,7 @@ bash-completion                                                               1:
 binutils                                                                      2.44-3                                  deb                         
 binutils-common                                                               2.44-3                                  deb                         
 binutils-x86-64-linux-gnu                                                     2.44-3                                  deb                         
-brave-browser                                                                 1.84.135                                deb                         
+brave-browser                                                                 1.84.139                                deb                         
 brave-keyring                                                                 1.19                                    deb                         
 breeze-cursor-theme                                                           4:6.3.5-1                               deb                         
 bsd-mailx                                                                     8.1.2-0.20220412cvs-1.1                 deb                         
