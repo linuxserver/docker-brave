@@ -20,7 +20,7 @@ bash-completion                                                               1:
 binutils                                                                      2.44-3                                  deb                         
 binutils-common                                                               2.44-3                                  deb                         
 binutils-x86-64-linux-gnu                                                     2.44-3                                  deb                         
-brave-browser                                                                 1.85.111                                deb                         
+brave-browser                                                                 1.85.116                                deb                         
 brave-keyring                                                                 1.19                                    deb                         
 breeze-cursor-theme                                                           4:6.3.5-1                               deb                         
 bsd-mailx                                                                     8.1.2-0.20220412cvs-1.1                 deb                         
@@ -814,7 +814,7 @@ libtwolame0                                                                   0.
 libubsan1                                                                     14.2.0-19                               deb                         
 libuchardet0                                                                  0.0.8-1+b2                              deb                         
 libudev1                                                                      257.9-1~deb13u1                         deb                         
-libunbound8                                                                   1.22.0-2                                deb                         
+libunbound8                                                                   1.22.0-2+deb13u1                        deb                         
 libunistring5                                                                 1.3-2                                   deb                         
 libunwind8                                                                    1.8.1-0.1                               deb                         
 libutempter0                                                                  1.2.1-4                                 deb                         
