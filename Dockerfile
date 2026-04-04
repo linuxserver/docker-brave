@@ -8,7 +8,9 @@ LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DA
 LABEL maintainer="thelamer"
 
 # title
-ENV TITLE=Brave
+ENV TITLE=Brave \
+    PIXELFLUX_WAYLAND=true \
+    NO_DECOR=true
 
 RUN \
   echo "**** add icon ****" && \
@@ -40,6 +42,6 @@ RUN \
 COPY /root /
 
 # ports and volumes
-EXPOSE 3000
+EXPOSE 3001
 
 VOLUME /config
