@@ -1,10 +1,10 @@
 #!/bin/bash
 
-BIN=/usr/bin/brave-browser
+BIN=/usr/bin/brave-origin
 
 # Cleanup
 if pgrep brave > /dev/null;then
-  rm -f $HOME/.config/BraveSoftware/Brave-Browser/Singleton*
+  rm -f $HOME/.config/BraveSoftware/Brave-Origin-Nightly/Singleton*
 fi
 
 ${BIN} \
