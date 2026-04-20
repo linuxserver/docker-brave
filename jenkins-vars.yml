@@ -6,7 +6,7 @@ external_type: na
 custom_version_command: "curl -s -L https://brave-browser-apt-nightly.s3.brave.com/dists/stable/main/binary-amd64/Packages.gz | gunzip |grep -A 7 -m 1 'Package: brave-browser-nightly' | awk -F ': ' '/Version/{print $2;exit}'"
 release_type: prerelease
 release_tag: origin
-ls_branch: origin
+ls_branch: borigin
 build_armhf: false
 repo_vars:
   - BUILD_VERSION_ARG = 'BRAVE_VERSION'
