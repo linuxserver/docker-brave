@@ -3,7 +3,7 @@ adduser                                                                       3.
 adwaita-icon-theme                                                            48.1-1                                 deb                         
 aiofiles                                                                      25.1.0                                 python                      
 aiohappyeyeballs                                                              2.6.2                                  python                      
-aiohttp                                                                       3.13.5                                 python                      
+aiohttp                                                                       3.14.0                                 python                      
 aioice                                                                        0.10.2                                 python                      
 aiosignal                                                                     1.4.0                                  python                      
 apt                                                                           3.0.3                                  deb                         
@@ -22,7 +22,7 @@ binutils                                                                      2.
 binutils-common                                                               2.44-3                                 deb                         
 binutils-x86-64-linux-gnu                                                     2.44-3                                 deb                         
 brave-keyring                                                                 1.20                                   deb                         
-brave-origin-nightly                                                          1.93.14                                deb                         
+brave-origin-nightly                                                          1.93.19                                deb                         
 breeze-cursor-theme                                                           4:6.3.5-1                              deb                         
 bsd-mailx                                                                     8.1.2-0.20220412cvs-1.1                deb                         
 bsdextrautils                                                                 2.41-5                                 deb                         
@@ -1047,7 +1047,7 @@ perl-modules-5.40                                                             5.
 pillow                                                                        12.2.0                                 python                      
 pinentry-curses                                                               1.3.1-2                                deb                         
 pip                                                                           25.1.1                                 python                      
-pixelflux                                                                     1.6.3                                  python                      
+pixelflux                                                                     1.6.4                                  python                      
 platformdirs                                                                  4.4.0                                  python                      
 poppler-data                                                                  0.4.12-1                               deb                         
 procps                                                                        2:4.0.4-9                              deb                         
