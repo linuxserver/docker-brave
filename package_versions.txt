@@ -21,7 +21,7 @@ bash-completion                                                               1:
 binutils                                                                      2.44-3                                 deb                         
 binutils-common                                                               2.44-3                                 deb                         
 binutils-x86-64-linux-gnu                                                     2.44-3                                 deb                         
-brave-browser                                                                 1.92.141                               deb                         
+brave-browser                                                                 1.92.143                               deb                         
 brave-keyring                                                                 1.20                                   deb                         
 breeze-cursor-theme                                                           4:6.3.5-1                              deb                         
 bsd-mailx                                                                     8.1.2-0.20220412cvs-1.1                deb                         
@@ -1098,7 +1098,7 @@ util-linux                                                                    2.
 vainfo                                                                        2.22.0+ds1-2                           deb                         
 vulkan-tools                                                                  1.4.304.0+dfsg1-1                      deb                         
 watchdog                                                                      6.0.0                                  python                      
-websockets                                                                    16.1                                   python                      
+websockets                                                                    16.1.1                                 python                      
 wget                                                                          1.25.0-2                               deb                         
 wheel                                                                         0.46.3                                 python                      
 wl-clipboard                                                                  2.2.1-2                                deb                         
