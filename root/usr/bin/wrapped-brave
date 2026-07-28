@@ -7,6 +7,18 @@ if pgrep brave > /dev/null;then
   rm -f $HOME/.config/BraveSoftware/Brave-Browser/Singleton*
 fi
 
+# Wayland check
+if ls -l /dev/dri/* > /dev/null 2>&1; then
+  if pgrep labwc > /dev/null 2>&1; then
+    WAYLAND="--ozone-platform=wayland"
+  fi
+fi
+
+# Pelorus accessibility
+if [ "${PELORUS,,}" == "true" ]; then
+  ACCESSIBILITY="--force-renderer-accessibility"
+fi
+
 ${BIN} \
   --no-first-run \
   --no-sandbox \
@@ -14,4 +26,6 @@ ${BIN} \
   --simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT' \
   --start-maximized \
   --user-data-dir \
+  ${WAYLAND} \
+  ${ACCESSIBILITY} \
    "$@" > /dev/null 2>&1
