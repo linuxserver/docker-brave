@@ -1,2 +1,2 @@
 #!/bin/bash
-wrapped-brave --enable-features=UseOzonePlatform --ozone-platform=wayland ${BRAVE_CLI}
+wrapped-brave ${BRAVE_CLI}
