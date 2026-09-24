@@ -7,6 +7,11 @@ if pgrep brave > /dev/null;then
   rm -f $HOME/.config/BraveSoftware/Brave-Browser/Singleton*
 fi
 
+# Wayland check
+if [ "${PIXELFLUX_WAYLAND,,}" == "true" ]; then
+  WAYLAND="--ozone-platform=wayland"
+fi
+
 # Pelorus accessibility
 if [ "${PELORUS,,}" == "true" ]; then
   ACCESSIBILITY="--force-renderer-accessibility"
@@ -18,6 +23,7 @@ ${BIN} \
   --password-store=basic \
   --simulate-outdated-no-au='Tue, 31 Dec 2099 23:59:59 GMT' \
   --start-maximized \
+  ${WAYLAND} \
   --user-data-dir \
   ${ACCESSIBILITY} \
    "$@" > /dev/null 2>&1
